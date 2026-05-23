@@ -1,0 +1,5 @@
+# finding average 
+a = 10
+b = 20 
+print ((a+b)/2)
+print (type(a))

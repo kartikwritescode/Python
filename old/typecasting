@@ -1,0 +1,12 @@
+a = "1234"
+print (a)
+print (type (a))
+# rn a is a t=strign variable
+# we will convert it into an integer variable
+
+a = int(a)
+print (type(a))
+# now a is integer variable
+ 
+a= float(a)
+print (a+5)

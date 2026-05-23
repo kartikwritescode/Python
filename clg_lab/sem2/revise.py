@@ -1,0 +1,5 @@
+kk=set()
+kk.add(1)
+kk.add(2)
+print(type(kk))
+print(kk)
