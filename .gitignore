@@ -1,1 +1,5 @@
 django/myproject/myproject/__pycache__/
+
+myproject/myapp/__pycache__/
+myproject/myapp/migrations/__pycache__/
+myproject/myproject/__pycache__/
