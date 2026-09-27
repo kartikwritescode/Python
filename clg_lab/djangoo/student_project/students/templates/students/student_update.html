@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+</head>
+<body>
+
+<h1>Update Student</h1>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    <label>Name:</label>
+    <br>
+    <input
+        type="text"
+        name="name"
+        value="{{ student.name }}"
+        required
+    >
+
+    <br><br>
+
+    <label>Roll No:</label>
+    <br>
+    <input
+        type="number"
+        name="roll_no"
+        value="{{ student.roll_no }}"
+        required
+    >
+
+    <br><br>
+
+    <label>Email:</label>
+    <br>
+    <input
+        type="email"
+        name="email"
+        value="{{ student.email }}"
+        required
+    >
+
+    <br><br>
+
+    <label>Course:</label>
+    <br>
+    <input
+        type="text"
+        name="course"
+        value="{{ student.course }}"
+        required
+    >
+
+    <br><br>
+
+    <label>Age:</label>
+    <br>
+    <input
+        type="number"
+        name="age"
+        value="{{ student.age }}"
+        required
+    >
+
+    <br><br>
+
+    <button type="submit">
+        Update Student
+    </button>
+
+</form>
+
+<br>
+
+<a href="{% url 'student_list' %}">
+    Cancel
+</a>
+
+</body>
+</html>
